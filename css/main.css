@@ -28,7 +28,7 @@ p a:hover {
 
 #header {
   height: 100%;
-  background: #fff url(../img/tall-header.jpg) bottom left no-repeat;
+  background: #fff url(../img/tall-header.jpg) 0% 100% no-repeat;
   position: relative;
   min-height: 550px;
 }
