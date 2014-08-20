@@ -2,4 +2,4 @@ name: Scott Lesser | Web Developer
 markdown: redcarpet
 pygments: true
 prose:
-	media: "uploads"
+	media: 'img'
