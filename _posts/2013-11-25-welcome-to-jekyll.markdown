@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2013-11-25 21:47:41
+title: "Welcome to Jekyll!"
+date: {}
 categories: jekyll update
+published: true
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
@@ -22,3 +23,5 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com
+
+![](/img/image.jpeg)
