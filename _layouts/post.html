@@ -1,9 +1,51 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="post-wrapper {{page.project-id}}-post">
+  <div class="mockup">
+    <div class="row">
+      <div class="large-12 columns">
+        <a href="/"><span class="fa fa-chevron-left icon"></span> back to scottlesser.com</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-8 large-centered columns">
+        <img class="animated fadeIn" src="/img/posts/{{page.project-id}}-mockup.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="details">
+    <div class="row">
+      <div class="large-9 columns text-center large-only-text-left">
+        <ul>
+          {% for tag in page.tags %}
+            <li>{{tag}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="large-3 columns text-center large-only-text-right">
+        <a href="{{ page.link }}" target="_blank" class="button">View Project</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>{{ page.title }}</h2>
 
-<div class="post">
-{{ content }}
+      <div class="post">
+      {{ content }}
+      </div>
+    </div>
+  </div>
+  <div class="post-footer">
+    <div class="row">
+      <div class="large-8 columns small-text-center large-only-text-left">
+        <p>Want me to be build something like {{page.title}} for you?</p>
+      </div>
+      <div class="large-4 columns large-only-text-right small-text-center">
+        <a href="mailto:scottwlesser@gmail.com" class="button">Contact Me</a>
+      </div>
+    </div>
+  </div>
 </div>
+

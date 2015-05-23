@@ -7,6 +7,11 @@ $(document).ready(function() {
     }, 500);
   });
 
+  if (!Modernizr.svg) {
+    $("img[src$='.svg']")
+      .attr("src", fallback);
+  }
+
   if(!Modernizr.touch){ 
     $(window).scroll(function() {
       var headerHeight = $('#header').height();      
@@ -28,7 +33,7 @@ $(document).ready(function() {
   $('#contact form').submit(function(event) {
     event.preventDefault();
 
-    $.post("http://getsimpleform.com/messages?form_api_token=8587f661d45ab998b7251bb064764ec6", $(this).serialize()).always(function() {
+    $.post("https://formkeep.com/f/74ad0e631f00", $(this).serialize()).always(function() {
       $("#contact form").fadeOut(500, function() {
         $("#contact h3").fadeIn(500);
       });
