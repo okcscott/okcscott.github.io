@@ -12,22 +12,10 @@ $(document).ready(function() {
       .attr("src", fallback);
   }
 
-  if(!Modernizr.touch){ 
-    $(window).scroll(function() {
-      var headerHeight = $('#header').height();      
-      var position = $(window).scrollTop();
-
-      if(headerHeight > position) {
-        var percentage = 100 - ((position/headerHeight) * 100)
-        $('#header').css('background-position-y',(percentage+'%'));
-      }
-    })
-  }
-
   $('#contact .show-contact').click(function() {
     $(this).fadeOut(500, function() {
-      $("#contact form").fadeIn(500);  
-    });    
+      $("#contact form").fadeIn(500);
+    });
   });
 
   $('#contact form').submit(function(event) {

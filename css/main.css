@@ -3,32 +3,33 @@ font-family: 'Lato', sans-serif;
 font-family: 'Merriweather', serif;
 */
 /* Home page styles */
-html, body { height: 100%;}
+html, body { height: 100%; letter-spacing: 0.06rem; }
 
 h2 {
   font-size: 3em;
 }
 
 ::selection {
-  background: #23b56b; /* Safari */
+  background: #3498DB; /* Safari */
   color: #fff;
   }
 ::-moz-selection {
-  background: #23b56b; /* Firefox */
+  background: #3498DB; /* Firefox */
   color: #fff;
 }
 
 p a {
-  color: #23b56b;
+  color: #3498DB;
 }
 
 p a:hover {
-  color: #187c49;
+  color: #2980B9;
 }
 
 #header {
   height: 100%;
-  background: #fff url(../img/tall-header.jpg) 0% 100% no-repeat;
+  background: #fff url(../img/header-2.jpg) left center no-repeat;
+  background-size: cover;
   position: relative;
   min-height: 550px;
 }
@@ -43,12 +44,13 @@ p a:hover {
 }
 
 #intro {
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 5px #fff;
 }
 
 #intro h2 {
   color: #fff;
   width: 60%;
+  font-weight: 300;
 }
 
 #navigation {
@@ -58,13 +60,15 @@ p a:hover {
 #navigation a {
   float: left;
   color: #fff;
-  margin-right: 30px;  
+  margin-right: 30px;
   font-size: 1.2em;
   font-weight: 300;
+  cursor: pointer;
 }
 
 #navigation a:hover {
-  color: #23b56b;
+  color: #3498DB;
+  cursor: pointer;
 }
 
 /* about styles */
@@ -91,11 +95,11 @@ p a:hover {
 }
 
 #about h2 span {
-  color: #23b56b;
+  color: #3498DB;
 }
 
 #about h2 span:hover {
-  color: #187c49;
+  color: #2980B9;
 }
 
 /* Portfolio */
@@ -147,7 +151,7 @@ p a:hover {
   text-align: left;
 }
 
-#portfolio .project a:hover .bg {  
+#portfolio .project a:hover .bg {
   background: transparent;
 }
 
@@ -186,7 +190,7 @@ p a:hover {
 
 #contact {
   padding: 8em 0;
-  background-color: #23b56b;
+  background-color: #3498DB;
   text-align: center;
   position: relative;
 }
@@ -196,12 +200,13 @@ p a:hover {
 }
 
 #contact .button {
-  /*margin: 2em 0;*/
-  background: #181818;
+  background: transparent;
+  border: solid 3px #fff;
 }
 
 #contact .button:hover {
-  background: #333;
+  background: #fff;
+  color: #333;
 }
 
 #contact .connections {
@@ -235,12 +240,22 @@ p a:hover {
 #contact form input[type='text'] {
   float: left;
   margin-top: 1%;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border-bottom: dotted 2px #fff;
+  font-size: 2rem;
+  color: #fff;
+  padding: 2rem 0;
 }
 
 #contact form input[type='submit'] {
   float: left;
   margin: 0;
   width: 100%;
+  margin-top: 1rem;
 }
 
 #contact h3 {
@@ -252,29 +267,101 @@ p a:hover {
 
 #thanks p {
   text-align: center;
-  background-color: #23b56b;
+  background-color: #3498DB;
   font-size: 1.2em;
-  font-weight: 300;  
+  font-weight: 300;
   padding: 1em;
+  margin-bottom: 0;
 }
 
 #thanks a {
   color: #fff;
 }
 
+/* Work */
+
+#work .project h2 {
+  color: #fff;
+}
+
+#work .project {
+  padding: 10rem 0 0;
+}
+
+#work .project img {
+  display: block;
+}
+
+#work .project .tags li {
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255,255,255, 0.7);
+}
+
+#work .project .info ul {
+  margin-left: 0;
+}
+
+#work .project .info ul li:first-child {
+  margin-left: 0;
+}
+
+#work .button {
+  background: transparent;
+  border: solid 3px #fff;
+  margin-bottom: 0;
+}
+
+#work .button:hover {
+  background: #fff;
+  color: rgba(0,0,0,0.8);
+}
+
+#work p {
+  color: rgba(255,255,255, 0.5);
+}
+
+#work .info {
+  padding-left: 3rem;
+}
+
+/* strayhouse */
+
+#work .project.strayhouse h2 {
+  color: #333;
+}
+
+#work .project.strayhouse .tags li {
+  background: rgba(33, 33, 33, 0.2);
+  color: rgba(33,33,33, 0.7);
+}
+
+#work .project.strayhouse .button {
+  background: transparent;
+  border: solid 3px #333;
+  color: #333;
+  margin-bottom: 0;
+}
+
+#work .project.strayhouse .button:hover {
+  background: #333;
+  color: rgba(255,255,255,0.8);
+}
+
+#work .project.strayhouse p {
+  color: rgba(33,33,33, 0.5);
+}
+
 /* responsive */
 
-@media (max-width: 50em){ 
+@media (max-width: 50em){
   h2 {
     font-size: 2em;
   }
 }
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+@media only screen and (min-width: 30em) and (max-width: 64em) {
   #header {
-    background-position: 25% 70%;
-    background-size: cover;
-    min-height: inherit;
+    background-position: center center;
   }
 
   #contact .actions-wrapper {
@@ -284,12 +371,26 @@ p a:hover {
   #about, #contact {
     padding: 4em 0;
   }
+
+  #work .project {
+    padding-top: 2rem;
+  }
+
+  #work .project .info {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  #work .project img {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
-@media only screen and (max-width: 30em) { 
+@media only screen and (max-width: 30em) {
   #header {
-    background-position: 25% 70%;
-    background-size: 300%;
+    background-position: center center;
     min-height: inherit;
   }
 
@@ -325,6 +426,15 @@ p a:hover {
 
   #contact .connections {
     width: 100%;
+    padding: 0 4rem;
+  }
+
+  #work .project {
+    padding-top: 2rem;
+  }
+
+  #work .project .info {
+    margin-bottom: 4rem;
   }
 
 }
@@ -368,6 +478,7 @@ p a:hover {
 .post-wrapper .details {
   padding: 1em 0;
   box-shadow: 0 0px 2px rgba(0,0,0,0.3);
+  position: relative;
 }
 
 .post-wrapper .details ul {
@@ -376,7 +487,7 @@ p a:hover {
   margin-left: 0;
 }
 
-.post-wrapper .details li {
+.post-wrapper .details li, .project .tags li {
   line-height: 1.5rem;
   border-radius: 0.75rem;
   background-color: #e1e1e3;
@@ -480,7 +591,7 @@ p a:hover {
   background: url('/img/posts/whoweare-bg.jpg') center center;
   margin-left: -100%;
   margin-right: -100%;
-  padding: 10rem 0;  
+  padding: 10rem 0;
 }
 
 .post-wrapper.lifechurch-post .values blockquote {
@@ -521,7 +632,7 @@ p a:hover {
   background: url('/img/posts/whoweare-bg.jpg') center center;
   margin-left: -100%;
   margin-right: -100%;
-  padding: 10rem 0;  
+  padding: 10rem 0;
 }
 
 .post-wrapper.lab-twenty-one-post .values blockquote {
@@ -534,4 +645,76 @@ p a:hover {
 
 .post-wrapper.lab-twenty-one-post h3 {
   border-color: #3a40d4;
+}
+
+/* Raisemore */
+
+.post-wrapper.raisemore-post .mockup {
+  background: #6DC039;
+}
+
+.post-wrapper.raisemore-post .mockup img {
+  width: 100%;
+}
+
+.post-wrapper.raisemore-post blockquote p {
+  color: #6DC039;
+}
+
+.post-wrapper.raisemore-post .button {
+  background: #6DC039;
+}
+
+.post-wrapper.raisemore-post .post-footer {
+  background: #6DC039;
+}
+
+.post-wrapper.raisemore-post .values blockquote {
+  margin: 0 30%;
+}
+
+.post-wrapper.raisemore-post .values blockquote p {
+  color: #fff;
+}
+
+.post-wrapper.raisemore-post h3 {
+  border-color: #6DC039;
+}
+
+/* Strayhouse */
+
+.post-wrapper.strayhouse-post .mockup {
+  background: #fff;
+}
+
+.post-wrapper.strayhouse-post .mockup a {
+  color: #333;
+}
+
+.post-wrapper.strayhouse-post .mockup img {
+  width: 100%;
+}
+
+.post-wrapper.strayhouse-post blockquote p {
+  color: #333;
+}
+
+.post-wrapper.strayhouse-post .button {
+  background: #333;
+}
+
+.post-wrapper.strayhouse-post .post-footer {
+  background: #333;
+}
+
+.post-wrapper.strayhouse-post .values blockquote {
+  margin: 0 30%;
+}
+
+.post-wrapper.strayhouse-post .values blockquote p {
+  color: #fff;
+}
+
+.post-wrapper.strayhouse-post h3 {
+  border-color: #333;
 }

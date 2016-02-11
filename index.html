@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Scott Lesser | Web Developer
+title: Scott Lesser | Ruby on Rails Developer | Oklahoma
 ---
 
 <div id="header">
@@ -8,11 +8,11 @@ title: Scott Lesser | Web Developer
     <div class="large-12 columns">
       <div class="content">
         <div id="intro">
-          <h2>This isn't your grandfather's <strong>web developer</strong> portfolio.</h2>
+          <h2><strong>Rails & Ionic Developer</strong> coding in the plains.</h2>
         </div>
         <div id="navigation">
           <a href="#about">About</a>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#work">Work</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -22,53 +22,54 @@ title: Scott Lesser | Web Developer
 <div id="about">
   <div class="row">
     <div class="large-12 columns">
-      <h2>Hello, I'm Scott Lesser. I'm a web developer living in Oklahoma, building applications and interfaces at <a href="http://lifechurch.tv"><span>lifechurch.tv</span></a>.</h2>
+      <h2>Hello, I'm Scott Lesser. I'm a web developer living in Oklahoma, building applications and interfaces at <a href="http://life.church"><span>Life.Church</span></a>.</h2>
       <p>
-        I'm passionate about crafting engaging user experiences and building cool apps. I spend my free time running, mentoring in the <a href="http://www.bbbsok.org/">Big Brothers Big Sisters</a> program, loving on my wife, Britnee and living that <i>#dadLife</i> with my son, Samuel. You can see some of my <a href="#portfolio">recent projects</a> below. I'd love to help you with your next great project, there's a <a href="#contact">contact form</a> and a few other ways to get in touch below.
+        I'm passionate about crafting engaging user experiences and building cool apps.
+        I spend my free time freelancing, mentoring in the <a href="http://www.bbbsok.org/">Big Brothers Big Sisters</a>
+        program, bombing at stand-up comedy, loving on my wife, Britnee and living that <i>#dadLife</i> with my son, Samuel and baby girl, Lucy.
+        You can see some of my <a href="#work">recent work</a> below. I'd love to help you with your next
+        great project, there's a <a href="#contact">contact form</a> and a few other ways to get in touch below.
       </p>
     </div>
   </div>
 </div>
-<div id="portfolio">
-  <div class="row">
-    <div class="large-12 columns">
-      <div id="portfolio-wrapper">
-        <h2>Portfolio</h2>
-        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-          {% for post in site.posts %}
-            <li class="project {{post.project-id}}">
-              <a href="{{post.url}}" style="background: url('../img/{{post.project-id}}.jpg');">
-                <div class="info">
-                  <h4>{{ post.title }}</h4>
-                  <ul>
-                    {% for tag in post.tags limit:2 %}
-                      {% if forloop.index > 1 %}
-                        <li>&middot;</li>
-                      {% endif %}
-                      <li>{{tag}}</li>
-                    {% endfor %}
-                  </ul>
-                </div>
-                <div class="bg"></div>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
+<div id="work">
+  {% for project in site.posts %}
+    {% capture odd_or_even %}{% cycle 'odd', 'even' %}{% endcapture %}
+    <div class="{{project.project-id}} project" style="background-color: {{project.background-color}};">
+      <div class="row">
+        <div class="large-5 columns {% if odd_or_even == 'odd'%}large-push-7{% endif %} small-centered medium-6 large-uncentered">
+          <div class="info">
+            <h2>{{project.title}}</h2>
+            <ul class="tags">
+              {% for tag in project.tags limit:3 %}
+                <li>{{tag}}</li>
+              {% endfor %}
+            </ul>
+            <p>
+              {{project.preview-text}}
+            </p>
+            <a href="{{project.url}}" class="button small">Read More about {{project.title}}</a>
+          </div>
+        </div>
+        <div class="large-7 columns {% if odd_or_even == 'odd'%}large-pull-5{% endif %}">
+          <img src="/img/posts/{{project.project-id}}-mockup.jpg">
+        </div>
       </div>
     </div>
-  </div>
+  {% endfor %}
 </div>
 <div id="contact">
   <div class="row">
     <div class="large-12 columns">
-      <h2>Have some questions? Want me to build something <strong>amazing</strong> for you? Use the contact button below.</h2>
+      <h2>Have some questions? Want to build something <strong>amazing</strong> with me?</h2>
       <div class="actions-wrapper">
         <a href="javascript:void(0);" class="button radius large show-contact">Start a Conversation</a>
         <h3>Thanks! We'll be in touch soon-ish.</h3>
         <form action="https://formkeep.com/f/74ad0e631f00" method="post">
           <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
           <!-- <input type='hidden' name='redirect_to' value='http://0.0.0.0:4000/#contact' /> -->
-          <!-- all your input fields here.... -->              
+          <!-- all your input fields here.... -->
           <div class="row">
             <div class="small-12 large-9 large-centered columns">
               <div class="row">
@@ -92,10 +93,10 @@ title: Scott Lesser | Web Developer
         <a href="https://github.com/okcscott"><i class="fa fa-github"></i></a>
         <a href="http://instagram.com/okcscott"><i class="fa fa-instagram"></i></a>
         <i class="break"></i>
-      </div>      
+      </div>
     </div>
   </div>
 </div>
 <div id="thanks">
-  <p>Thanks to <a href="http://twitter.com/ryantauss">@ryantauss</a> for some serious design help. Hosted with <a href="http://pages.github.com/">GitHub Pages</a>.</p>
+  <p>Thanks to <a href="http://twitter.com/ryantauss">@ryantauss</a> for the design help. Hosted with <a href="http://pages.github.com/">GitHub Pages</a>.</p>
 </div>
