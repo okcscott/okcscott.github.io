@@ -589,13 +589,13 @@ p a:hover {
 
 .post-wrapper.lifechurch-post .values {
   background: url('/img/posts/whoweare-bg.jpg') center center;
-  margin-left: -100%;
-  margin-right: -100%;
+  margin-left: -15%;
+  margin-right: -15%;
   padding: 10rem 0;
 }
 
 .post-wrapper.lifechurch-post .values blockquote {
-  margin: 0 30%;
+  margin: 0;
 }
 
 .post-wrapper.lifechurch-post .values blockquote p {
