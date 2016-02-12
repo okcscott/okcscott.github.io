@@ -3,49 +3,16 @@ layout: home
 title: Scott Lesser | Ruby on Rails Developer | Oklahoma
 ---
 
-<div id="header">
+<div id="more-work">
   <div class="row">
-    <div class="large-12 columns">
-      <div class="content">
-        <div id="intro">
-          <h2><strong>Rails & Ionic Developer</strong> coding in the plains.</h2>
-        </div>
-        <div id="navigation">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
+    <div class="large-4 columns large-only-text-left small-text-center">
+      <a href="/" class="button"><i class="fa fa-chevron-left"></i>Back to scottlesser.com</a>
     </div>
   </div>
 </div>
-<div id="about">
-  <div class="row">
-    <div class="large-12 columns">
-      <h2>Hello, I'm Scott Lesser. I'm a web developer living in Oklahoma, building applications and interfaces at <a href="http://life.church"><span>Life.Church</span></a>.</h2>
-      <p>
-        I'm passionate about crafting engaging user experiences and building cool apps.
-        I spend my free time freelancing, mentoring in the <a href="http://www.bbbsok.org/">Big Brothers Big Sisters</a>
-        program, bombing at stand-up comedy, loving on my wife, Britnee and living that <i>#dadLife</i> with my son, Samuel and baby girl, Lucy.
-        You can see some of my <a href="#work">recent work</a> below. I'd love to help you with your next
-        great project, there's a <a href="#contact">contact form</a> and a few other ways to get in touch below.
-      </p>
-    </div>
-  </div>
-</div>
+
 <div id="work">
-  <div id="more-work">
-    <div class="row">
-      <div class="large-8 columns small-text-center large-only-text-left">
-        <p>These are just a few of my recent projects, want to see more?</p>
-      </div>
-      <div class="large-4 columns large-only-text-right small-text-center">
-        <a href="/work" class="button">See All of My Work <i class="fa fa-chevron-right"></i></a>
-      </div>
-    </div>
-  </div>
-  {% assign projects = (site.categories.featured | sort: 'featured-order') %}
-  {% for project in projects %}
+  {% for project in site.posts %}
     {% capture odd_or_even %}{% cycle 'odd', 'even' %}{% endcapture %}
     <div class="{{project.project-id}} project" style="background-color: {{project.background-color}};">
       <div class="row">
@@ -69,16 +36,6 @@ title: Scott Lesser | Ruby on Rails Developer | Oklahoma
       </div>
     </div>
   {% endfor %}
-</div>
-<div id="more-work">
-  <div class="row">
-    <div class="large-8 columns small-text-center large-only-text-left">
-      <p>These are just a few of my recent projects, want to see more?</p>
-    </div>
-    <div class="large-4 columns large-only-text-right small-text-center">
-      <a href="/work" class="button">See All of My Work <i class="fa fa-chevron-right"></i></a>
-    </div>
-  </div>
 </div>
 <div id="contact">
   <div class="row">

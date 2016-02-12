@@ -6,6 +6,8 @@ link: http://raisemore.com
 permalink: raisemore/
 background-color: "#6DC039"
 preview-text: Raisemore is a custom crowdfunding mobile applications for fundraisers, leveraging social media.
+category: featured
+featured-order: 3
 tags:
 - Ionic
 - Mobile
@@ -16,7 +18,7 @@ tags:
 
 Raisemore is a *white label* mobile solution for fundraising. It leverages social media and crowdfunding to allow attenders to recruit and fundraise right insdie of the app.
 
-> RAISEMORE IS MORE THAN YOUR MOBILE APP. WE HELP YOU UNDERSTAND YOUR USERS TO DRIVE ENGAGEMENT AND INCREASE DONATIONS. IT'S MOBILE FUNDRAISING MADE SIMPLE. 
+> RAISEMORE IS MORE THAN YOUR MOBILE APP. WE HELP YOU UNDERSTAND YOUR USERS TO DRIVE ENGAGEMENT AND INCREASE DONATIONS. IT'S MOBILE FUNDRAISING MADE SIMPLE.
 
 ### Ionic
 

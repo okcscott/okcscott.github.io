@@ -351,92 +351,30 @@ p a:hover {
   color: rgba(33,33,33, 0.5);
 }
 
-/* responsive */
-
-@media (max-width: 50em){
-  h2 {
-    font-size: 2em;
-  }
+#more-work {
+  padding: 2rem 0;
+  color: #333;
 }
 
-@media only screen and (min-width: 30em) and (max-width: 64em) {
-  #header {
-    background-position: center center;
-  }
-
-  #contact .actions-wrapper {
-    height: auto;
-  }
-
-  #about, #contact {
-    padding: 4em 0;
-  }
-
-  #work .project {
-    padding-top: 2rem;
-  }
-
-  #work .project .info {
-    margin-bottom: 4rem;
-    text-align: center;
-  }
-
-  #work .project img {
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-  }
+#more-work p {
+  color: #333;
+  margin-bottom: 0;
+  line-height: 58px;
 }
 
-@media only screen and (max-width: 30em) {
-  #header {
-    background-position: center center;
-    min-height: inherit;
-  }
+#more-work .button {
+  background: transparent;
+  border: solid 3px #333;
+  color: #333;
+  margin-bottom: 0;
+}
 
-  #header h2 {
-    width: 100%;
-  }
+#more-work .button i.fa-chevron-right {
+  margin-left: 5px;
+}
 
-  #about {
-    padding: 2em 0;
-  }
-
-  #about p {
-    text-align: justify;
-    font-size: 1.3em;
-  }
-
-  #portfolio ul li {
-    margin: 1em 0 0;
-  }
-
-  #portfolio h3 {
-    width: 100%;
-    padding: 0.5em 0;
-  }
-
-  #contact {
-    padding: 2em 0;
-  }
-
-  #contact .actions-wrapper {
-    height: auto;
-  }
-
-  #contact .connections {
-    width: 100%;
-    padding: 0 4rem;
-  }
-
-  #work .project {
-    padding-top: 2rem;
-  }
-
-  #work .project .info {
-    margin-bottom: 4rem;
-  }
-
+#more-work .button i.fa-chevron-left {
+  margin-right: 5px;
 }
 
 .post-wrapper p {
@@ -717,4 +655,97 @@ p a:hover {
 
 .post-wrapper.strayhouse-post h3 {
   border-color: #333;
+}
+
+/* responsive */
+
+@media (max-width: 50em){
+  h2 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 30em) and (max-width: 64em) {
+  #header {
+    background-position: center center;
+  }
+
+  #contact .actions-wrapper {
+    height: auto;
+  }
+
+  #about, #contact {
+    padding: 4em 0;
+  }
+
+  #work .project {
+    padding-top: 2rem;
+  }
+
+  #work .project .info {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  #work .project img {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  #header {
+    background-position: center center;
+    min-height: inherit;
+  }
+
+  #header h2 {
+    width: 100%;
+  }
+
+  #about {
+    padding: 2em 0;
+  }
+
+  #about p {
+    text-align: justify;
+    font-size: 1.3em;
+  }
+
+  #portfolio ul li {
+    margin: 1em 0 0;
+  }
+
+  #portfolio h3 {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+
+  #contact {
+    padding: 2em 0;
+  }
+
+  #contact .actions-wrapper {
+    height: auto;
+  }
+
+  #contact .connections {
+    width: 100%;
+    padding: 0 4rem;
+  }
+
+  #work .project {
+    padding-top: 2rem;
+  }
+
+  #work .project .info {
+    margin-bottom: 4rem;
+  }
+
+  #more-work p, .post-wrapper .post-footer p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
 }

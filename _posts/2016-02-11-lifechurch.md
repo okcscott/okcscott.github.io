@@ -6,6 +6,8 @@ link: http://lifechurch.tv
 permalink: lifechurch/
 background-color: "#B9252D"
 preview-text: I started working at Life.Church in 2012. I worked on 3 different teams, and a slew of projects.
+category: featured
+featured-order: 1
 tags:
 - Ruby on Rails
 - SaaS

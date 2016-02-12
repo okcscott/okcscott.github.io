@@ -6,6 +6,8 @@ link: http://strayhousecoffee.com
 permalink: strayhouse/
 background-color: "#fff"
 preview-text: Strayhouse is small coffee shop and bakery located in Clinton, OK.
+category: featured
+featured-order: 2
 tags:
 - Design
 - Storenvy
