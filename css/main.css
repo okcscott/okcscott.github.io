@@ -657,6 +657,44 @@ p a:hover {
   border-color: #333;
 }
 
+/* FlatBill.me */
+
+.post-wrapper.flatbill-post .mockup {
+  background: #239a55;
+}
+
+.post-wrapper.flatbill-post .mockup a {
+  color: #fff;
+}
+
+.post-wrapper.flatbill-post .mockup img {
+  width: 100%;
+}
+
+.post-wrapper.flatbill-post blockquote p {
+  color: #239a55;
+}
+
+.post-wrapper.flatbill-post .button {
+  background: #239a55;
+}
+
+.post-wrapper.flatbill-post .post-footer {
+  background: #239a55;
+}
+
+.post-wrapper.flatbill-post .values blockquote {
+  margin: 0 30%;
+}
+
+.post-wrapper.flatbill-post .values blockquote p {
+  color: #239a55;
+}
+
+.post-wrapper.flatbill-post h3 {
+  border-color: #239a55;
+}
+
 /* responsive */
 
 @media (max-width: 50em){
