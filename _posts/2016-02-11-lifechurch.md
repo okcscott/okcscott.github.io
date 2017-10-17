@@ -11,18 +11,17 @@ featured-order: 1
 tags:
 - Ruby on Rails
 - SaaS
-- Ionic
-- HTML
-- CSS
-- Javascript
-- Rubygem
-- API
-- Objective-C
+- React Native
+- Heroku
+- Sidekiq
+- Redis
+- Elasticsearch
+- APIs
 ---
 
 _The following is work done while on staff at Life.Church since 2012. None of it is my intellectual property and the rights to everything belong to Life.Church...I'm assuming._
 
-During my time at Life.Church, I've worked on a few different development teams. For a while, I was on Interactive, which is a part of the larger Creative Media team. The primary responsibility of that team was managing the Life.Church website. In 2014, the Life.Church website underwent a major overhaul. With the help of the brilliant [Adam Fairhead](http://fairheadcreative.com), it was a major success. We shifted the site from being content-heavy to leading with more images and storytelling. We switched from a Ruby on Rails site to a Liquid website. It provided a much snappier experience since it is serving up just static html, like the good ol' days.
+During my time at Life.Church, I've worked on a few different development teams. For a while, I was on Interactive. The primary responsibility of that team was managing the Life.Church website. In 2014, the Life.Church website underwent a major overhaul. We shifted the site from being content-heavy to leading with more images and storytelling. From a techincal side, we sw
 
 ### Life.Church API
 
@@ -46,26 +45,26 @@ One of the coolest and most challenging projects I got to work on while on Inter
   </blockquote>
 </div>
 
-## Church to Church
+## Open Network
 
-At Life.Church, one of the core values is: "We are all about the “capital C” Church!". One of the ways the church lives this out is through the Church to Church team. This team is dedicated to building software that can help other churches. All of this software is completely free. [Read More.](http://www.lifechurch.tv/churches/)
+At Life.Church, one of the core values is: "We are all about the “capital C” Church!". One of the ways the church lives this out is through the Open Network team. This team is dedicated to building software that can help other churches. All of this software is completely free. [Read More.](http://www.lifechurch.tv/churches/)
 
 <h3><img src="/img/posts/open-icon.svg" width="60" alt="Open"> Open</h3>
 
-The most recognized product that the C2C team has to offer is Open. Open is primarily a (free) E-Commerce site giving churches access to the entire library of Life.Church Resources & Ideas. You'll find sermon videos, editable art packages, kids' lessons, operational materials, and leadership Ideas to support every part of your ministry. And they're all 100% free.
+The most recognized product that the Open Network team has to offer is Open. Open is primarily a (free) E-Commerce site giving churches access to the entire library of Life.Church Resources & Training. You'll find sermon videos, editable art packages, kids' lessons, operational materials, and leadership training to support every part of your ministry. And they're all 100% free.
 
-While on the C2C team, Open went through a few changes. We started to focus on bringing current users back to the website, more often. Sending out weekly emails highlighting new resources based on past downloads, a calendar showing users when future resources would become available, with the ability to subscribe to their launch, and the addition of blog called "Ideas" where we give away the details of how Life.Church does ministry, operationally.
+While on the Open Network team, Open went through a few changes. We started to focus on bringing current users back to the website, more often. Sending out weekly emails highlighting new resources based on past downloads, a calendar showing users when future resources would become available, with the ability to subscribe to their launch.
 
 <h3><img src="/img/posts/churchmetrics-icon.svg" width="60" alt="Church Metrics"> Church Metrics</h3>
 
-Church Metrics is a data tracking tool for metrics such as attendance, salvations, giving and more. While on the team, Church Metrics went through a complete reskin. Majore features of the application were overhauled to make them easier & more robust. These changes also involved updates to the native iOS & Android Church Metrics applications. We introduced an entirely new feature, called _Groups_, that allowed church plants and denominations to manage their network of churches, and to be to run high-level reports & charts against that data.
+Church Metrics is a data tracking tool for metrics such as attendance, salvations, giving and more. While on the team, Church Metrics went through a complete reskin. Majore features of the application were overhauled to make them easier & more robust. We introduced an entirely new feature, called _Groups_, that allowed church plants and denominations to manage their network of churches, and to be to run high-level reports & charts against that data. We recently rebuilt our mobile apps from scratch using React Native.
 
 <h3><img src="/img/posts/chop-icon.svg" width="60" alt="Church Online Platform"> Church Online Platform</h3>
 
-The Church Online Platform was originally built to allow Life.Church to bring their ministry online. It was then turned into a SaaS application for all churches to use. With the platform, you get a robust admin section where you can manage users, events & even prayer requests. On the front-end, users are provided a live chat experience to go along with a streaming video the church provides.
+The Church Online Platform was originally built to allow Life.Church to bring their ministry online. It was then turned into a SaaS application for any church to use. With the platform, you get a robust admin section where you can manage users, events & even prayer requests. On the front-end, users are provided a live chat & prayer experience to go along with a streaming video the church provides.
 
 While on the team, we released a new theme editor, which allowed our team & any church with some HTML knowledge to build dynamic page layouts. We rebuilt the front-end to work with the new Liquid templating system, and released some new layouts to help churches get started. We also implemented a _simlive_ feature, that allowed churches to drop-in a YouTube video, instead of having the costly overhead of a streaming provider.
 
 <h3><img src="/img/posts/developme-icon.svg" width="60" alt="Develop.Me"> Develop.Me</h3>
 
-The newest application offered by the Church to Church team, Develop.Me is a perfomance review tool, that helps promote a culture of self-development. Through goal tracking & annual reviews, churches can help their staff grow and develop year-over-year. While on the team, Develop.Me saw new organization signups increase by more than **100%**! We worked on features to help bring users back into the app, with email reminders about goals users had set and the ability to update goal progress.
+The newest application offered by the Open Network team, Develop.Me is a perfomance review tool, that helps promote a culture of self-development. Through goal tracking & annual reviews, churches can help their staff grow and develop year-over-year. While on the team, Develop.Me saw new organization signups increase by more than **100%**! We worked on features to help bring users back into the app, with email reminders about goals users had set and the ability to update goal progress.

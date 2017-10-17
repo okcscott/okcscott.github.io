@@ -211,7 +211,7 @@ p a:hover {
 
 #contact .connections {
   text-align: justify;
-  width: 150px;
+  width: 80px;
   display: inline-block;
   margin-top: 2em;
 }
@@ -348,6 +348,60 @@ p a:hover {
 }
 
 #work .project.strayhouse p {
+  color: rgba(33,33,33, 0.5);
+}
+
+/* armada */
+
+#work .project.armada h2 {
+  color: #333;
+}
+
+#work .project.armada .tags li {
+  background: rgba(33, 33, 33, 0.2);
+  color: rgba(33,33,33, 0.7);
+}
+
+#work .project.armada .button {
+  background: transparent;
+  border: solid 3px #333;
+  color: #333;
+  margin-bottom: 0;
+}
+
+#work .project.armada .button:hover {
+  background: #333;
+  color: rgba(255,255,255,0.8);
+}
+
+#work .project.armada p {
+  color: rgba(33,33,33, 0.5);
+}
+
+/* qadosh */
+
+#work .project.qadosh h2 {
+  color: #333;
+}
+
+#work .project.qadosh .tags li {
+  background: rgba(33, 33, 33, 0.2);
+  color: rgba(33,33,33, 0.7);
+}
+
+#work .project.qadosh .button {
+  background: transparent;
+  border: solid 3px #333;
+  color: #333;
+  margin-bottom: 0;
+}
+
+#work .project.qadosh .button:hover {
+  background: #333;
+  color: rgba(255,255,255,0.8);
+}
+
+#work .project.qadosh p {
   color: rgba(33,33,33, 0.5);
 }
 
@@ -546,42 +600,42 @@ p a:hover {
 
 /* Lab Twenty One */
 
-.post-wrapper.lab-twenty-one-post .mockup {
+.post-wrapper.level-7-concepts-post .mockup {
   background: #3a40d4;
 }
 
-.post-wrapper.lab-twenty-one-post .mockup img {
+.post-wrapper.level-7-concepts-post .mockup img {
   width: 100%;
 }
 
-.post-wrapper.lab-twenty-one-post blockquote p {
+.post-wrapper.level-7-concepts-post blockquote p {
   color: #3a40d4;
 }
 
-.post-wrapper.lab-twenty-one-post .button {
+.post-wrapper.level-7-concepts-post .button {
   background: #3a40d4;
 }
 
-.post-wrapper.lab-twenty-one-post .post-footer {
+.post-wrapper.level-7-concepts-post .post-footer {
   background: #3a40d4;
 }
 
-.post-wrapper.lab-twenty-one-post .values {
+.post-wrapper.level-7-concepts-post .values {
   background: url('/img/posts/whoweare-bg.jpg') center center;
   margin-left: -100%;
   margin-right: -100%;
   padding: 10rem 0;
 }
 
-.post-wrapper.lab-twenty-one-post .values blockquote {
+.post-wrapper.level-7-concepts-post .values blockquote {
   margin: 0 30%;
 }
 
-.post-wrapper.lab-twenty-one-post .values blockquote p {
+.post-wrapper.level-7-concepts-post .values blockquote p {
   color: #fff;
 }
 
-.post-wrapper.lab-twenty-one-post h3 {
+.post-wrapper.level-7-concepts-post h3 {
   border-color: #3a40d4;
 }
 
@@ -654,6 +708,92 @@ p a:hover {
 }
 
 .post-wrapper.strayhouse-post h3 {
+  border-color: #333;
+}
+
+/* Armada */
+
+.post-wrapper.armada-post .mockup {
+  background: #dfd81e;
+}
+
+.post-wrapper.armada-post .mockup a {
+  color: #333;
+}
+
+.post-wrapper.armada-post .mockup img {
+  width: 100%;
+}
+
+.post-wrapper.armada-post blockquote p {
+  color: #333;
+}
+
+.post-wrapper.armada-post .button {
+  background: #dfd81e;
+  color: #333;
+}
+
+.post-wrapper.armada-post .post-footer {
+  background: #dfd81e;
+}
+
+.post-wrapper.armada-post .post-footer p {
+  color: #333;
+}
+
+.post-wrapper.armada-post .values blockquote {
+  margin: 0 30%;
+}
+
+.post-wrapper.armada-post .values blockquote p {
+  color: #fff;
+}
+
+.post-wrapper.armada-post h3 {
+  border-color: #333;
+}
+
+/* Qadosh */
+
+.post-wrapper.qadosh-post .mockup {
+  background: #b3dfd8;
+}
+
+.post-wrapper.qadosh-post .mockup a {
+  color: #333;
+}
+
+.post-wrapper.qadosh-post .mockup img {
+  width: 100%;
+}
+
+.post-wrapper.qadosh-post blockquote p {
+  color: #333;
+}
+
+.post-wrapper.qadosh-post .button {
+  background: #b3dfd8;
+  color: #333;
+}
+
+.post-wrapper.qadosh-post .post-footer {
+  background: #b3dfd8;
+}
+
+.post-wrapper.qadosh-post .post-footer p {
+  color: #333;
+}
+
+.post-wrapper.qadosh-post .values blockquote {
+  margin: 0 30%;
+}
+
+.post-wrapper.qadosh-post .values blockquote p {
+  color: #fff;
+}
+
+.post-wrapper.qadosh-post h3 {
   border-color: #333;
 }
 

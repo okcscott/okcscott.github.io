@@ -17,14 +17,4 @@ $(document).ready(function() {
       $("#contact form").fadeIn(500);
     });
   });
-
-  $('#contact form').submit(function(event) {
-    event.preventDefault();
-
-    $.post("https://formkeep.com/f/74ad0e631f00", $(this).serialize()).always(function() {
-      $("#contact form").fadeOut(500, function() {
-        $("#contact h3").fadeIn(500);
-      });
-    });
-  });
 });

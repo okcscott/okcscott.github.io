@@ -7,7 +7,7 @@ permalink: raisemore/
 background-color: "#6DC039"
 preview-text: Raisemore is a custom crowdfunding mobile applications for fundraisers, leveraging social media.
 category: featured
-featured-order: 3
+featured-order: 4
 tags:
 - Ionic
 - Mobile
